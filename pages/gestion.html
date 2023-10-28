@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="../assets/css/acceuil.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/popup-supprimer.css" />
+    <link rel="stylesheet" href="../assets/css/popup-modifier.css" />
+    <link rel="stylesheet" href="../assets/css/gestion.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+        <h3>My <span style="color: green">blog</span></h3>
+      </div>
+
+      <ul class="nav-links">
+        <div class="authen">
+          <div class="ins">
+            <a href="./acceuil.html">Acceuil</a>
+          </div>
+          <div class="conn">
+            <a href="./gestion.html">Gérer mes blogs</a>
+          </div>
+
+          <div class="conn" id="deco">Déconnexion</div>
+        </div>
+      </ul>
+    </nav>
+
+    <section class="btn-container">
+      <div class="btn"><a href="#popup-ajouter">Créer un blog</a></div>
+    </section>
+
+    <!-- POPUP ALERT SUPPRIMER LIVRE-->
+    <div id="popup-supprimer" class="overlay">
+      <div class="overlay-content">
+        <a class="close" href="#">&times;</a>
+        <div class="popup">
+          <div class="content-popup">
+            <section class="principal">
+              <div class="container-pop">
+                <form action="./acceuil.html">
+                  <div class="element">
+                    <div class="style-msg-alert">
+                      <span class="desc"
+                        >ATTENTION!! Voulez-vous vraimment supprimer ce livre
+                        ?</span
+                      >
+                    </div>
+                    <div class="yesOrNo">
+                      <div class="no" id="no">
+                        <a href="./mes-livres.html">Non</a>
+                      </div>
+                      <div class="sup" id="supprimer">
+                        <a href="">Oui</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END POPUP ALERT SUPPRIMER LIVRE -->
+
+    <!-- POPUP AJOUTER LIVRE-->
+    <div id="popup-ajouter" class="overlay-modif">
+      <div class="overlay-content-modif">
+        <a class="close" href="#">&times;</a>
+        <div class="popup">
+          <div class="content-popup">
+            <section class="principal">
+              <div class="container-pop-modif">
+                <div class="head-modif">
+                  <p>Créer un blog</p>
+                </div>
+                <form
+                  class="form-modif"
+                  id="formAdd"
+                  enctype="multipart/form-data"
+                >
+                  <div class="element-modif">
+                    <div class="titre-container style-element">
+                      <label for="titre">Titre du blog</label>
+                      <input type="text" name="titreBlog" id="titreModif" />
+                    </div>
+                    <div class="descrip-container style-element">
+                      <label for="libLivre">Sous titre du blog</label>
+                      <input type="text" name="soustitreBlog" id="libLivre" />
+                    </div>
+                    <div class="image-container style-element">
+                      <label for="image">Image du blog</label>
+                      <input type="file" name="image" id="image" />
+                    </div>
+
+                    <div class="somme-container style-element">
+                      <label for="audio">Exprimez-vous ici</label>
+                      <textarea type="text" name="text" id="text"></textarea>
+                    </div>
+                    <button class="btn-modif">Ajouter</button>
+                    <p id="messageAdd"></p>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END POPUP AJOUTER LIVRE -->
+
+    <section class="livres-container">
+      <!-- <div class="livre">
+          <div class="supp-bloc"><a href="#popup-supprimer">Supprimer</a></div>
+          <div class="modif-bloc"><a href="#popup-modifier">Modifier</a></div>
+          <div class="image-livre">
+            <img
+              src="../assets/img/histoire-general-afrique.png"
+              alt=""
+              height="300px"
+              width="200px"
+            />
+          </div>
+          <div class="audio-and-des">
+            <audio controls><source src="../assets/BoyFifty-snake.mp3" /></audio>
+            <div class="description">
+              <p class="auteur">
+                <u>Auteur:</u> <span style="color: black">Mohamed sangare</span>
+              </p>
+              <p class="titre">
+                <u>Titre:</u>
+                <span style="color: black"> Afrique, mon afrique</span>
+              </p>
+              <p class="des-title"><u>Descriptions</u></p>
+              <p class="des-text">
+                djfshfshfghjsdsdjhgdshjsghjdsfgsfgdshfdf fdfdsgf fdfgdshjfg
+                ddgfjfdvfjdfvjhfsdhsgfshfvdhfdff fdffjg fdgf ffgzdfhzg
+              </p>
+            </div>
+          </div>
+        </div> -->
+    </section>
+
+    <script src="../assets/js/deconnexion.js"></script>
+    <script src="../assets/js/"></script>
+  </body>
+</html>

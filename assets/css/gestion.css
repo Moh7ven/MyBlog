@@ -1,0 +1,24 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.btn {
+  margin-top: 5%;
+  width: 150px;
+  height: 70px;
+  background-color: rgb(254, 86, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
