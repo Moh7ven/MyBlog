@@ -1,12 +1,6 @@
 const token = localStorage.getItem("token");
 
-/* VERIFIER SI L'UTILISATEUR EST CONNECTER */
-if (!token) {
-  alert("Veuillez vous connecter svp");
-  window.location.href = "../pages/connexion.html";
-}
-
-/* AJOUT DE LIVRE */
+/* AJOUT D'ARTICLE */
 async function addBlog() {
   const formData = new FormData(formAdd);
   try {
@@ -20,7 +14,7 @@ async function addBlog() {
     });
 
     if (res.ok) {
-      setInterval((window.location.href = "./gestion.html"), 3000);
+      window.location.href = "./gestion.html";
     } else {
       const resData = await res.json();
       console.log("Erreur : ", resData);

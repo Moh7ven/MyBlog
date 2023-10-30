@@ -86,7 +86,7 @@ form p {
   color: white;
 }
 
-.form-nom {
+.form-pseudo {
   margin: auto;
   margin-top: 1%;
 }
@@ -109,7 +109,7 @@ form p {
   margin-top: 1%;
 }
 
-.form-nom,
+.form-pseudo,
 .form-password {
   width: 80%;
   /* margin-left: 15%; */

@@ -1,9 +1,8 @@
 .btn-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-
 
 .btn {
   margin-top: 5%;
@@ -21,4 +20,10 @@
   color: white;
   text-decoration: none;
   font-size: 15px;
+}
+
+textarea {
+  height: 150px;
+  width: 290px;
+  border-radius: 5px;
 }
