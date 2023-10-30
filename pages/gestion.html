@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="../assets/css/popup-supprimer.css" />
     <link rel="stylesheet" href="../assets/css/popup-modifier.css" />
-    <link rel="stylesheet" href="../assets/css/gestion.css" />
+    <link rel="stylesheet" href="../assets/css/gestion.css"/>
   </head>
   <body>
     <nav class="navbar">
@@ -99,7 +99,11 @@
                     </div>
                     <div class="descrip-container style-element">
                       <label for="libLivre">Sous titre du blog</label>
-                      <input type="text" name="soustitreBlog" id="soustitreBlog" />
+                      <input
+                        type="text"
+                        name="soustitreBlog"
+                        id="soustitreBlog"
+                      />
                     </div>
                     <div class="image-container style-element">
                       <label for="image">Image du blog</label>
@@ -122,36 +126,31 @@
     </div>
     <!-- END POPUP AJOUTER LIVRE -->
 
-    <section class="livres-container">
-      <!-- <div class="livre">
-          <div class="supp-bloc"><a href="#popup-supprimer">Supprimer</a></div>
-          <div class="modif-bloc"><a href="#popup-modifier">Modifier</a></div>
-          <div class="image-livre">
-            <img
-              src="../assets/img/histoire-general-afrique.png"
-              alt=""
-              height="300px"
-              width="200px"
-            />
+    <section class="articles-container">
+      <div class="article-content">
+        <div class="titre-date-pseudo">
+          <h1 id="titreBlog">LA VIE D'AUJOURD'HUI</h1>
+          <div id="username-date">
+            <p id="pseudo">Moh7ven</p>
+            <p id="date">30/10/2023 16:40</p>
           </div>
-          <div class="audio-and-des">
-            <audio controls><source src="../assets/BoyFifty-snake.mp3" /></audio>
-            <div class="description">
-              <p class="auteur">
-                <u>Auteur:</u> <span style="color: black">Mohamed sangare</span>
-              </p>
-              <p class="titre">
-                <u>Titre:</u>
-                <span style="color: black"> Afrique, mon afrique</span>
-              </p>
-              <p class="des-title"><u>Descriptions</u></p>
-              <p class="des-text">
-                djfshfshfghjsdsdjhgdshjsghjdsfgsfgdshfdf fdfdsgf fdfgdshjfg
-                ddgfjfdvfjdfvjhfsdhsgfshfvdhfdff fdffjg fdgf ffgzdfhzg
-              </p>
-            </div>
+        </div>
+        <h3 id="soustitreBlog">Les obstacles de tous les jours</h3>
+        <img src="" alt="" />
+      </div>
+
+      <div class="article-content">
+        <div class="titre-date-pseudo">
+          <h1 id="titreBlog">LA VIE D'AUJOURD'HUI</h1>
+          <div id="username-date">
+            <p id="pseudo">Moh7ven</p>
+            <p id="date">30/10/2023 16:40</p>
           </div>
-        </div> -->
+        </div>
+        <h3 id="soustitreBlog">Les obstacles de tous les jours</h3>
+        <img src="" alt="" />
+        <div class="text-container"></div>
+      </div>
     </section>
 
     <script src="../assets/js/session.js"></script>

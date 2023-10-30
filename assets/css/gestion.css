@@ -1,3 +1,11 @@
+* {
+  box-shadow: 0 0 2px inset red;
+}
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -26,4 +34,42 @@ textarea {
   height: 150px;
   width: 290px;
   border-radius: 5px;
+}
+
+/* ARTICLES CONTAINER */
+
+.articles-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.article-content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.718);
+  border-radius: 5px;
+  padding-bottom: 3%;
+}
+
+.article-content div.titre-date-pseudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: auto;
+}
+
+.titre-date-pseudo .titreBlog {
+  font-size: 50px;
 }
