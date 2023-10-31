@@ -44,6 +44,31 @@ async function recupUserArticle() {
 
     if (response.ok) {
       const responsData = await response.json();
+      let html = "";
+
+      responsData.forEach((data) => {
+        html += `
+      <div class="article-content">
+        <div class="titre-date-pseudo">
+          <h1 id="titreBlog" class="titreBlog"><u>${data.titreBlog}</u></h1>
+          <div id="username-date" class="username-date">
+            <p id="pseudo">Moh7ven</p>
+            <p id="date">${data.createdAtBlog}</p>
+          </div>
+        </div>
+        <div id="soustitreBlog" class="soustitreBlog">
+          <h2>${data.soustitreBlog}</h2>
+        </div>
+        <img src="../assets/img/pieces-empilees-terre-plantes.jpg" alt="" />
+        <div class="text-container">
+          <p>
+          ${data.text}
+          </p>
+        </div>
+      </div>
+      `;
+      });
+      document.querySelector(".articles-container").innerHTML = html;
       console.log(responsData);
     } else {
       const responsData = await response.json();
@@ -53,5 +78,4 @@ async function recupUserArticle() {
     console.log(error);
   }
 }
-
 recupUserArticle();
