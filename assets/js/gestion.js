@@ -59,7 +59,7 @@ async function recupUserArticle() {
         <div id="soustitreBlog" class="soustitreBlog">
           <h2>${data.soustitreBlog}</h2>
         </div>
-        <img src="../assets/img/pieces-empilees-terre-plantes.jpg" alt="" />
+        <img src="${data.image}" alt="" />
         <div class="text-container">
           <p>
           ${data.text}
