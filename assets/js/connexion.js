@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+document.querySelector(".loader-container").style.display = "none";
 
 function validateForm() {
   const pseudo = document.querySelector("#pseudo").value;
@@ -23,6 +24,7 @@ async function userConnect() {
   const formData = new FormData(form);
   if (validateForm() === true) {
     try {
+      document.querySelector(".loader-container").style.display = "grid";
       const res = await fetch(
         "https://myblog-x9p2.onrender.com/api/auth/login",
         {
@@ -43,6 +45,8 @@ async function userConnect() {
         const resData = await res.json();
         console.log("Erreur lors de la connexion : ", resData);
         message.textContent = resData.error;
+
+        document.querySelector(".loader-container").style.display = "none";
       }
     } catch (error) {
       console.log(error);

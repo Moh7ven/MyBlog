@@ -11,12 +11,13 @@ body {
 }
 
 .principal {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 95%;
-  margin-top: 10vh;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  /* margin-top: 10vh; */
+  position: relative;
 }
 
 .container {
