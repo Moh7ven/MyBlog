@@ -98,12 +98,12 @@ async function userRegister() {
         }, 3000);
       } else {
         const responseData = await response.json();
-        if (responseData.errors.emailUser.message === undefined) {
+        /* if (responseData.errors.emailUser.message === undefined) {
           messageEmail = "";
         }
         if (responseData.errors.Username.message === undefined) {
           messagePseudo = "";
-        }
+        } */
 
         console.error("Erreur lors de l'enregistrement :", responseData);
         console.log(responseData.errors.emailUser.message);
