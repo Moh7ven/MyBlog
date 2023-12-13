@@ -106,8 +106,8 @@ async function userRegister() {
         } */
 
         console.error("Erreur lors de l'enregistrement :", responseData);
-        console.log(responseData.errors.emailUser.message);
-        console.log(responseData.errors.Username.message);
+        /* console.log(responseData.errors.emailUser.message);
+        console.log(responseData.errors.Username.message); */
 
         message2.textContent = responseData.errors.Username.message;
         message.textContent = responseData.errors.emailUser.message;
