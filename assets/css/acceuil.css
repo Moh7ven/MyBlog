@@ -77,6 +77,82 @@ div.authen a {
   color: white;
 }
 
+/* ARTICLES CONTAINER */
+
+.articles-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.article-content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.718);
+  border-radius: 7px;
+  padding-bottom: 3%;
+  margin-top: 5%;
+}
+
+.article-content div.titre-date-pseudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: auto;
+}
+
+.titre-date-pseudo .titreBlog {
+  font-size: 30px;
+}
+
+.username-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 2%;
+}
+
+.username-date #pseudo {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(254, 86, 1);
+}
+
+.username-date #date {
+  color: gray;
+}
+
+.soustitreBlog {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  margin-top: 3px;
+  font-style: italic;
+}
+
+img {
+  width: 95%;
+  height: auto;
+  margin-top: 1%;
+}
+
+.text-container {
+  width: 95%;
+  margin-top: 5%;
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow: hidden;
@@ -147,5 +223,3 @@ div.authen a {
   transform: rotate(135deg) translate(-19px, -5px);
   margin-left: -17px;
 }
-
-
